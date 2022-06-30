@@ -3,6 +3,13 @@
     cursor: pointer;
     padding: 0.5rem;
     text-align: center;
+    user-select: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.color-container:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
 }
 
 .color-text {
@@ -10,4 +17,9 @@
 }
 .color-light {
     color: var(--clr-gray);
+}
+.color-alert {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    font-style: italic;
 }
