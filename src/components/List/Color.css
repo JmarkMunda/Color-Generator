@@ -1,0 +1,13 @@
+
+.color-container {
+    cursor: pointer;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.color-text {
+    color: var(--clr-dark);
+}
+.color-light {
+    color: var(--clr-gray);
+}
