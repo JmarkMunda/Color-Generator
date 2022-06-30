@@ -15,9 +15,19 @@
 .header p {
     color: var(--clr-gray);
     margin-top: -10px;
+    font-size: 1.2rem;
 }
 .header h1 {
     font-size: 3rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .header h1  {
+        font-size: 1.8rem;
+    }
+    .header p {
+        font-size: 0.8rem;
+    }
 }
 
 /* Form */
@@ -46,13 +56,14 @@ input:focus {
     background-color: var(--clr-gray);
     color: var(--clr-light-gray);
     border: none;
-  
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
 }
 .btn:hover {
     background-color: var(--clr-dark);
 }
 
 .hint {
+    margin-top: 4px;
     font-size: 0.8rem;
     font-style: italic;
     color: var(--clr-gray);

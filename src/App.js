@@ -7,14 +7,16 @@ import './App.css'
 import Values from 'values.js';
 
 function App() {
-  const [list, setList] = useState(new Values('#222').all(10));
+  const [list, setList] = useState(new Values('#2e2e2e').all(10));
   const [input, setInput] = useState('');
   const [alert, setAlert] = useState({show: false, msg: '', type: ''})
   const inputRef = useRef();
   
   useEffect(() => {
     inputRef.current.focus();
+  },[])
 
+  useEffect(() => {
     const timeout = setTimeout(() => {
       return alertHandler();
     }, 3000);
@@ -52,10 +54,11 @@ function App() {
         {/* map */}
         {list.map((item, index) => {
           const hexColor = item.hex;
-          return (
-            <Color key={index} {...item} hexColor={hexColor} index={index}/>
+          return (      
+              <Color key={index} {...item} hexColor={hexColor} index={index}/>    
           )
         })}
+     
       </section>
     </main>
   );
