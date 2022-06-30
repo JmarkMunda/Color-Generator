@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+
+:root {
+    --clr-gray: rgb(151, 151, 151);
+    --clr-light-gray: rgb(241, 241, 241);
+    --clr-dark: rgb(75, 75, 75);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 80px;
+    width: 100%;
+    height: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* ============= Colors =============== */
+
+.colorlist-container {
+    margin-top: 6rem;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-auto-rows: 150px;
 }
 
-.App-link {
-  color: #61dafb;
+/* ALert */
+.success {
+    color: green;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.danger {
+    color: red;
 }
