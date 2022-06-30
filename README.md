@@ -1,5 +1,5 @@
 # "Color Generator" :art:
-👉 <a href="https://jm-color-generator.netlify.app/">View website</a> :earth_asia:
+👉 <a href="https://jm-color-generator.netlify.app/">VIsit website</a> :earth_asia:
 
 This project was created using React JS
 
